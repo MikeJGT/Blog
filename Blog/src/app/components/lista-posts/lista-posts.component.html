@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="posted" *ngFor="let post of listaPosts">
+        <figure>
+            <img [src]="post.imagen" alt="">
+        </figure>
+        <h3>{{post.titulo}}</h3>
+        <p> <span>{{post.categoria}}</span> {{post.texto}}</p>
+        <p>{{post.autor}} {{post.fecha}}</p>
+    </div>
+</div>
