@@ -1,10 +1,15 @@
-<div class="container">
-    <div class="posted" *ngFor="let post of listaPosts">
+<h1>Entradas disponibles</h1>
+<div class="row wrap">
+    <div class="posted m-2 col-lg-3 col-md-5 col-sm-12" *ngFor="let _ of [].constructor(9)">
+        <!-- *ngFor="let post of listaPosts" -->
         <figure>
-            <img [src]="post.imagen" alt="">
+            <img [src]="prueba.imagen" alt="">
         </figure>
-        <h3>{{post.titulo}}</h3>
-        <p> <span>{{post.categoria}}</span> {{post.texto}}</p>
-        <p>{{post.autor}} {{post.fecha}}</p>
+        <div>
+            <h3>{{prueba.titulo}}</h3>
+            <p><span>Categoría: {{prueba.categoria}}</span></p>
+            <p class="texto"> {{prueba.texto}}</p>
+            <p> <span>{{prueba.autor}}</span> {{prueba.fecha}}</p>
+        </div>
     </div>
 </div>
