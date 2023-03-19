@@ -7,7 +7,7 @@ img {
 figure {
     width: 100%;
     height: auto;
-    background-color: tomato;
+    /* background-color: tomato; */
     margin-right: 20px;
     border-radius: 5px;
     overflow: hidden;
@@ -36,11 +36,9 @@ h1 {
 }
 
 .posted {
-    /* width: calc(30% - 10px); */
     border: 1px solid black;
     padding: 10px 10px 0px 10px;
     cursor: pointer;
-    background-color: aqua;
     border-radius: 5px;
     box-shadow: 2px 2px 2px #a19f9f;
 }
