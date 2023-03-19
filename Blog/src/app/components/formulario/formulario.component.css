@@ -1,0 +1,22 @@
+/* input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+} */
+
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 2px #a19f9f;
+}
+
+.noValid {
+    border-color: red;
+
+}
+
+.noValid-text {
+    color: red;
+}

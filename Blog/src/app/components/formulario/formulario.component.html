@@ -1,0 +1,40 @@
+<h1>Form Blog</h1>
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <label class="col-12 form-label">Titulo</label>
+            <input type="text" class="col-12 Form-control" [ngClass]="{noValid: checkError('titulo','required')}"
+                formControlName="titulo">
+            <p class="noValid-text" *ngIf="checkError('titulo','required')">
+                El campo Título es obligatorio.
+            </p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <label class="col-12 form-label">Texto</label>
+            <textarea type="text" class="col-12 Form-control" formControlName="texto"></textarea>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <label class="col-12 form-label">Autor</label>
+            <input type="text" class="col-12 Form-control" formControlName="autor">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <label class="col-12 form-label">Imagen Url</label>
+            <input type="text" class="col-12 Form-control" formControlName="imagen">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <label class="col-12 form-label">Fecha</label>
+            <input type="date" class="col-12 Form-control" formControlName="fecha">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <label class="col-12 form-label">Categoría</label>
+            <input type="text" class="col-12 Form-control" [ngClass]="{noValid: checkError('categoria','required')}"
+                formControlName="categoria">
+            <p class="noValid-text" *ngIf="checkError('categoria','required')">
+                El campo Categoría es obligatorio.
+            </p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <input type="submit" class="btn btn-info" value="Enviar">
+        </div>
+    </div>
+</form>
