@@ -29,7 +29,7 @@ export class FormularioComponent {
 
   onSubmit() {
     if (this.formulario.valid) {
-      console.log('datos', this.formulario.value)
+      //console.log('datos', this.formulario.value)
       this.postSv.create(this.formulario.value)
       this.rute.navigate(['/posts'])
     } else {
